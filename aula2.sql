@@ -48,3 +48,4 @@ INSERT INTO conta(numero_conta, nome_agencia, saldo) values("001", "agencia S", 
 SELECT * FROM agencia;
 SELECT * FROM cliente;
 SELECT * FROM conta;
+/*Comentario*/
