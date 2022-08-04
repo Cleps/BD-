@@ -36,11 +36,11 @@ CREATE TABLE tomador(
     FOREIGN KEY (numero_conta) REFERENCES conta(numero_conta)
     );
 
-INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia rogerio", " cidade rogerio", 1);
-INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia leticia", " cidade leticia", 1);
-INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia sergio", "cidade sergio", 0);
+INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia A", " cidade C", 1);
+INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia S", " cidade X", 1);
+INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia D", "cidade Z", 0);
 
-INSERT INTO cliente(nome_cliente, rua_cliente, cidade_cliente) values("juan carlos", "chupa pika", "cidade rogerio");
+INSERT INTO cliente(nome_cliente, rua_cliente, cidade_cliente) values("mr", "seila man", "cidade A");
 
 SELECT * FROM agencia;
 SELECT * FROM cliente;
