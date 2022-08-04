@@ -40,7 +40,11 @@ INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia A", " c
 INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia S", " cidade X", 1);
 INSERT INTO agencia(nome_agencia, cidade_agencia, ativo) values("agencia D", "cidade Z", 0);
 
-INSERT INTO cliente(nome_cliente, rua_cliente, cidade_cliente) values("mr", "seila man", "cidade A");
+INSERT INTO cliente(nome_cliente, rua_cliente, cidade_cliente) values("Mr A", "rua seila man", "cidade A");
+INSERT INTO cliente(nome_cliente, rua_cliente, cidade_cliente) values("Mr B", "rua nao sei", "cidade C");
+
+INSERT INTO conta(numero_conta, nome_agencia, saldo) values("001", "agencia S", "100000");
 
 SELECT * FROM agencia;
 SELECT * FROM cliente;
+SELECT * FROM conta;
