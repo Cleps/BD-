@@ -53,6 +53,7 @@ INSERT INTO cliente(nome_cliente, rua_cliente, cidade_cliente) values("Mr B", "r
 INSERT INTO conta(numero_conta, nome_agencia, saldo) values("001", "agencia S", "100000");
 INSERT INTO conta(numero_conta, nome_agencia, saldo) values("002", "agencia H", "200000");
 INSERT INTO conta(numero_conta, nome_agencia, saldo) values("003", "agencia G", "300000");
+INSERT INTO conta(numero_conta, nome_agencia, saldo) values("004", "agencia G", "300000");
 
 
 SELECT * FROM agencia;
@@ -73,3 +74,8 @@ FROM conta c
 SELECT SUM(saldo)
 FROM conta;
 
+/*somando por grupos*/
+
+SELECT nome_agencia, SUM(saldo)
+FROM conta
+GROUP BY nome_agencia;
